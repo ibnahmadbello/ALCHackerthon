@@ -14,19 +14,20 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome to Andela Fruits Shop."
+        android:text="@string/heading"
         android:layout_gravity="center"
         android:textSize="20sp"
          />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Please type your name here:"
-        android:id="@+id/customer_name"/>
+        android:hint="@string/your_name"
+        android:id="@+id/customer_name"
+        android:inputType="text"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Please Select your items from the list below: "
+        android:text="@string/select_items"
         android:layout_gravity="center"
         android:textSize="16sp"/>
 
@@ -39,14 +40,14 @@
         android:layout_weight="1"
         android:layout_height="wrap_content"
         android:id="@+id/items"
-        android:text="Items"
+        android:text="@string/items"
         android:textAllCaps="true"
         android:textSize="20sp"/>
     <TextView
         android:layout_width="0dp"
         android:layout_weight="1"
         android:layout_height="wrap_content"
-        android:text="price(#)"
+        android:text="@string/price"
         android:id="@+id/price"
         android:textAllCaps="true"
         android:textSize="20sp"
@@ -55,7 +56,7 @@
         android:layout_width="0dp"
         android:layout_weight="1"
         android:layout_height="wrap_content"
-        android:text="QUANTITY"
+        android:text="@string/quantity"
         android:textSize="20sp"
         android:id="@+id/quantity"
         />
@@ -71,19 +72,20 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="Orange" />
+            android:text="@string/orange" />
         <TextView
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:id="@+id/orange_price"
-            android:text="50"
+            android:text="@string/orange_price"
             />
         <EditText
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:id="@+id/orange_quantity"/>
+            android:id="@+id/orange_quantity"
+            android:inputType="number"/>
         </LinearLayout>
 
     <LinearLayout
@@ -95,19 +97,20 @@
         android:layout_weight="1"
         android:layout_height="wrap_content"
         android:id="@+id/egg"
-        android:text="Egg"/>
+        android:text="@string/egg"/>
         <TextView
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:id="@+id/egg_price"
-            android:text="500"
+            android:text="@string/egg_price"
             />
         <EditText
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:id="@+id/egg_quantity"/>
+            android:id="@+id/egg_quantity"
+            android:inputType="number"/>
     </LinearLayout>
 
     <LinearLayout
@@ -118,19 +121,20 @@
         android:layout_weight="1"
         android:layout_height="wrap_content"
         android:id="@+id/apple"
-        android:text="Apple"/>
+        android:text="@string/apple"/>
         <TextView
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:id="@+id/apple_price"
-            android:text="150"
+            android:text="@string/apple_price"
             />
         <EditText
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:id="@+id/apple_quantity"/>
+            android:id="@+id/apple_quantity"
+            android:inputType="number"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -139,20 +143,21 @@
         android:layout_width="0dp"
         android:layout_weight="1"
         android:layout_height="wrap_content"
-        android:text="Pineapple"
+        android:text="@string/pineapple"
         android:id="@+id/pineapple"/>
         <TextView
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:id="@+id/pineapple_price"
-            android:text="200"
+            android:text="@string/pineapple_price"
             />
         <EditText
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:id="@+id/pineapple_quantity"/>
+            android:id="@+id/pineapple_quantity"
+            android:inputType="number"/>
         </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -162,19 +167,20 @@
         android:layout_weight="1"
         android:layout_height="wrap_content"
         android:id="@+id/coconut"
-        android:text="Coconut"/>
+        android:text="@string/coconut"/>
         <TextView
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:id="@+id/coconut_price"
-            android:text="70"
+            android:text="@string/coconut_price"
             />
         <EditText
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:id="@+id/coconut_quantity"/>
+            android:id="@+id/coconut_quantity"
+            android:inputType="number"/>
         </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -183,20 +189,21 @@
         android:layout_width="0dp"
         android:layout_weight="1"
         android:layout_height="wrap_content"
-        android:text="Water Melon"
+        android:text="@string/water_melon"
         android:id="@+id/water_melon"/>
         <TextView
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:id="@+id/water_melon_price"
-            android:text="100"
+            android:text="@string/water_melon_price"
             />
         <EditText
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:id="@+id/water_melon_quantity"/>
+            android:id="@+id/water_melon_quantity"
+            android:inputType="number"/>
         </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -206,19 +213,20 @@
         android:layout_weight="1"
         android:layout_height="wrap_content"
         android:id="@+id/guava"
-        android:text="Guava"/>
+        android:text="@string/guava"/>
         <TextView
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:id="@+id/guava_price"
-            android:text="50"
+            android:text="@string/guava_price"
             />
         <EditText
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:id="@+id/guava_quantity"/>
+            android:id="@+id/guava_quantity"
+            android:inputType="number"/>
         </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -228,19 +236,20 @@
         android:layout_weight="1"
         android:layout_height="wrap_content"
         android:id="@+id/banana"
-        android:text="Banana"/>
+        android:text="@string/banana"/>
         <TextView
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:id="@+id/banana_price"
-            android:text="200"
+            android:text="@string/banana_price"
             />
         <EditText
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:id="@+id/banana_quantity"/>
+            android:id="@+id/banana_quantity"
+            android:inputType="number"/>
         </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -250,19 +259,20 @@
         android:layout_weight="1"
         android:layout_height="wrap_content"
         android:id="@+id/grape"
-        android:text="Grape"/>
+        android:text="@string/grape"/>
         <TextView
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:id="@+id/grape_price"
-            android:text="50"
+            android:text="@string/grape_price"
             />
         <EditText
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:id="@+id/grape_quantity"/>
+            android:id="@+id/grape_quantity"
+            android:inputType="number"/>
         </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -272,19 +282,20 @@
         android:layout_weight="1"
         android:id="@+id/dates"
         android:layout_height="wrap_content"
-        android:text="Dates"/>
+        android:text="@string/dates"/>
         <TextView
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:id="@+id/dates_price"
-            android:text="80"
+            android:text="@string/dates_price"
             />
         <EditText
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:id="@+id/dates_quantity"/>
+            android:id="@+id/dates_quantity"
+            android:inputType="number"/>
         </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -294,19 +305,20 @@
         android:layout_weight="1"
         android:layout_height="wrap_content"
         android:id="@+id/paw_paw"
-        android:text="Paw-Paw"/>
+        android:text="@string/paw_paw"/>
         <TextView
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:id="@+id/paw_paw_price"
-            android:text="175"
+            android:text="@string/paw_paw_price"
             />
         <EditText
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:id="@+id/paw_paw_quantity"/>
+            android:id="@+id/paw_paw_quantity"
+            android:inputType="number"/>
         </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -316,19 +328,20 @@
         android:layout_weight="1"
         android:id="@+id/carrot"
         android:layout_height="wrap_content"
-        android:text="Carrot"/>
+        android:text="@string/carrot"/>
         <TextView
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:id="@+id/carrot_price"
-            android:text="65"
+            android:text="@string/carrot_price"
             />
         <EditText
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:id="@+id/carrot_quantity"/>
+            android:id="@+id/carrot_quantity"
+            android:inputType="number"/>
         </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -338,19 +351,20 @@
         android:layout_weight="1"
         android:layout_height="wrap_content"
         android:id="@+id/cucumber"
-        android:text="Cucumber"/>
+        android:text="@string/cucumber"/>
         <TextView
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:id="@+id/cucumber_price"
-            android:text="30"
+            android:text="@string/cucumber_price"
             />
         <EditText
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:id="@+id/cucumber_quantity"/>
+            android:id="@+id/cucumber_quantity"
+            android:inputType="number"/>
         </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -360,19 +374,20 @@
         android:layout_weight="1"
         android:layout_height="wrap_content"
         android:id="@+id/strawberry"
-        android:text="Strawberry"/>
+        android:text="@string/strawberry"/>
         <TextView
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:id="@+id/strawberry_price"
-            android:text="140"
+            android:text="@string/strawberry_price"
             />
         <EditText
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:id="@+id/strawberry_quantity"/>
+            android:id="@+id/strawberry_quantity"
+            android:inputType="number"/>
         </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -382,25 +397,26 @@
         android:layout_weight="1"
         android:id="@+id/tangerine"
         android:layout_height="wrap_content"
-        android:text="Tangerine"/>
+        android:text="@string/tangerine"/>
         <TextView
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:id="@+id/tangerine_price"
-            android:text="50"
+            android:text="@string/tangerine_price"
             />
         <EditText
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:id="@+id/tangerine_quantity"/>
+            android:id="@+id/tangerine_quantity"
+            android:inputType="number"/>
 
 </LinearLayout>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ORDER NOW"
+        android:text="@string/order_now"
         android:layout_gravity="center"
         android:onClick="orderNow"/>
 </LinearLayout>

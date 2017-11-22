@@ -11,12 +11,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/display_summary"
-        android:text="Summary Page"
+        android:text="@string/summary_page"
         android:textSize="28sp"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Generate Summary Report"
+        android:text="@string/summary_report"
         android:onClick="orderNow"/>
 
 </LinearLayout>
