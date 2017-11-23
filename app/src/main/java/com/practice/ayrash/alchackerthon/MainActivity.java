@@ -12,6 +12,12 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     int totalPrice = 0;
+    int orange_price, egg_price, apple_price, pineapple_price, coconut_price, watermelon_price,
+    guava_price, banana_price, grape_price, dates_price, pawpaw_price, carrot_price, cucumber_price,
+    strawberry_price, tangerine_price;
+    int orange_quantity, egg_quantity, apple_quantity, pineapple_quantity, coconut_quantity,
+    watermelon_quantity, guava_quantity, banana_quantity, grape_quantity, dates_quantity,
+    pawpaw_quantity, carrot_quantity, cucumber_quantity, strawberry_quantity, tangerine_quantity;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +30,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
 
         CheckBox orange = (CheckBox) findViewById(R.id.orange);
+            if (orange.isChecked()){
+                totalPrice += (orange_quantity * orange_price);
+            }
         CheckBox egg = (CheckBox) findViewById(R.id.egg);
         CheckBox apple = (CheckBox) findViewById(R.id.apple);
         CheckBox pineapple = (CheckBox) findViewById(R.id.pineapple);
@@ -40,7 +49,9 @@ public class MainActivity extends AppCompatActivity {
         CheckBox tangerine = (CheckBox) findViewById(R.id.tangerine);
 
         TextView orangePrice = (TextView) findViewById(R.id.orange_price);
+        orange_price = Integer.parseInt(orangePrice.getText().toString());
         TextView eggPrice = (TextView) findViewById(R.id.egg_price);
+        egg_price = Integer.parseInt(eggPrice.getText().toString());
         TextView applePrice = (TextView) findViewById(R.id.apple_price);
         TextView pineapplePrice = (TextView) findViewById(R.id.pineapple_price);
         TextView coconutPrice = (TextView) findViewById(R.id.coconut_price);
@@ -56,6 +67,7 @@ public class MainActivity extends AppCompatActivity {
         TextView tangerinePrice = (TextView) findViewById(R.id.tangerine_price);
 
         EditText orangeQuantity = (EditText) findViewById(R.id.orange_quantity);
+        orange_quantity = Integer.parseInt(orangeQuantity.getText().toString());
         EditText eggQuantity = (EditText) findViewById(R.id.egg_quantity);
         EditText appleQuantity = (EditText) findViewById(R.id.apple_quantity);
         EditText pineappleQuantity = (EditText) findViewById(R.id.pineapple_quantity);
