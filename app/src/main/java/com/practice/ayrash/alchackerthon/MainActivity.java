@@ -69,21 +69,33 @@ public class MainActivity extends AppCompatActivity {
         EditText orangeQuantity = (EditText) findViewById(R.id.orange_quantity);
         orange_quantity = Integer.parseInt(orangeQuantity.getText().toString());
         EditText eggQuantity = (EditText) findViewById(R.id.egg_quantity);
+        egg_quantity = Integer.parseInt(eggQuantity.getText().toString());
         EditText appleQuantity = (EditText) findViewById(R.id.apple_quantity);
+        apple_quantity = Integer.parseInt(appleQuantity.getText().toString());
         EditText pineappleQuantity = (EditText) findViewById(R.id.pineapple_quantity);
+        pineapple_quantity = Integer.parseInt(pineappleQuantity.getText().toString());
         EditText coconutQuantity = (EditText) findViewById(R.id.coconut_quantity);
+        coconut_quantity = Integer.parseInt(coconutQuantity.getText().toString());
         EditText waterMelonQuantity = (EditText) findViewById(R.id.water_melon_quantity);
+        watermelon_quantity = Integer.parseInt(waterMelonQuantity.getText().toString());
         EditText guavaQuantity = (EditText) findViewById(R.id.guava_quantity);
-        EditText bananaQuanity = (EditText) findViewById(R.id.banana_quantity);
+        guava_quantity = Integer.parseInt(guavaQuantity.getText().toString());
+        EditText bananaQuantity = (EditText) findViewById(R.id.banana_quantity);
+        banana_quantity = Integer.parseInt(bananaQuantity.getText().toString());
         EditText grapeQuantity = (EditText) findViewById(R.id.grape_quantity);
+        grape_quantity = Integer.parseInt(grapeQuantity.getText().toString());
         EditText datesQuantity = (EditText) findViewById(R.id.dates_quantity);
+        dates_quantity = Integer.parseInt(datesQuantity.getText().toString());
         EditText pawpawQuantity = (EditText) findViewById(R.id.paw_paw_quantity);
+        pawpaw_quantity = Integer.parseInt(pawpawQuantity.getText().toString());
         EditText carrotQuantity = (EditText) findViewById(R.id.carrot_quantity);
+        carrot_quantity = Integer.parseInt(carrotQuantity.getText().toString());
         EditText cucumberQuantity = (EditText) findViewById(R.id.cucumber_quantity);
+        cucumber_quantity = Integer.parseInt(cucumberQuantity.getText().toString());
         EditText strawberryQuantity = (EditText) findViewById(R.id.strawberry_quantity);
+        strawberry_quantity = Integer.parseInt(strawberryQuantity.getText().toString());
         EditText tangerineQuantity = (EditText) findViewById(R.id.tangerine_quantity);
-
-
+        tangerine_quantity = Integer.parseInt(tangerineQuantity.getText().toString());
     }
 
 
