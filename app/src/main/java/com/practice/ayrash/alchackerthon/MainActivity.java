@@ -18,10 +18,18 @@ public class MainActivity extends AppCompatActivity {
     int orange_quantity, egg_quantity, apple_quantity, pineapple_quantity, coconut_quantity,
     watermelon_quantity, guava_quantity, banana_quantity, grape_quantity, dates_quantity,
     pawpaw_quantity, carrot_quantity, cucumber_quantity, strawberry_quantity, tangerine_quantity;
+
+    public TextView orangePrice, eggPrice, applePrice, pineapplePrice, coconutPrice, watermelonPrice,
+    guavaPrice, bananaPrice, grapePrice, datesPrice, pawpawPrice, carrotPrice, cucumberPrice,
+    strawberryPrice, tangerinePrice;
+    public EditText orangeQuantity;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        orangePrice = (TextView) findViewById(R.id.orange_price);
+        orangeQuantity = (EditText) findViewById(R.id.orange_quantity);
     }
 
     public void orderNow(View view){
@@ -29,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
 //        Intent intent = new Intent(this, DisplaySummaryActivity.class);
 //        startActivity(intent);
 
-        TextView orangePrice = (TextView) findViewById(R.id.orange_price);
+//        TextView orangePrice = (TextView) findViewById(R.id.orange_price);
         orange_price = Integer.parseInt(orangePrice.getText().toString());
         TextView eggPrice = (TextView) findViewById(R.id.egg_price);
         egg_price = Integer.parseInt(eggPrice.getText().toString());
@@ -60,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
         TextView tangerinePrice = (TextView) findViewById(R.id.tangerine_price);
         tangerine_price = Integer.parseInt(tangerinePrice.getText().toString());
 
-        EditText orangeQuantity = (EditText) findViewById(R.id.orange_quantity);
+//        EditText orangeQuantity = (EditText) findViewById(R.id.orange_quantity);
         orange_quantity = Integer.parseInt(orangeQuantity.getText().toString());
         EditText eggQuantity = (EditText) findViewById(R.id.egg_quantity);
         egg_quantity = Integer.parseInt(eggQuantity.getText().toString());
@@ -152,8 +160,8 @@ public class MainActivity extends AppCompatActivity {
                 totalPrice += (tangerine_quantity * tangerine_price);
             }
 
-
         Toast.makeText(this, "The total price is " + totalPrice, Toast.LENGTH_SHORT).show();
+
     }
 
 
