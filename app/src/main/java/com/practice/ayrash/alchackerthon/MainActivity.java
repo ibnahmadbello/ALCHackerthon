@@ -26,8 +26,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void orderNow(View view){
 
-        Intent intent = new Intent(this, DisplaySummaryActivity.class);
-        startActivity(intent);
+//        Intent intent = new Intent(this, DisplaySummaryActivity.class);
+//        startActivity(intent);
 
         TextView orangePrice = (TextView) findViewById(R.id.orange_price);
         orange_price = Integer.parseInt(orangePrice.getText().toString());
@@ -153,6 +153,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
 
+        Toast.makeText(this, "The total price is " + totalPrice, Toast.LENGTH_SHORT).show();
     }
 
 
