@@ -116,9 +116,11 @@ public class MainActivity extends AppCompatActivity {
         cucumber_quantity = Integer.parseInt(cucumberQuantity.getText().toString());
         strawberry_quantity = Integer.parseInt(strawberryQuantity.getText().toString());
         tangerine_quantity = Integer.parseInt(tangerineQuantity.getText().toString());
+
+        orderNow();
     }
 
-    public void orderNow(View view){
+    public void orderNow(){
 
 //        Intent intent = new Intent(this, DisplaySummaryActivity.class);
 //        startActivity(intent);
