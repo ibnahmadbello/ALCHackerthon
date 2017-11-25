@@ -123,65 +123,65 @@ public class MainActivity extends AppCompatActivity {
 //        Intent intent = new Intent(this, DisplaySummaryActivity.class);
 //        startActivity(intent);
 
-            if (orange.isChecked()){
-                totalPrice += (orange_quantity * orange_price);
-            }
+        if (orange.isChecked()){
+            totalPrice += (orange_quantity * orange_price);
+        }
 
-            if (egg.isChecked()){
-                totalPrice += (egg_quantity * egg_price);
-            }
+        if (egg.isChecked()){
+            totalPrice += (egg_quantity * egg_price);
+        }
 
-            if (apple.isChecked()){
-                totalPrice += (apple_quantity * apple_price);
-            }
+        if (apple.isChecked()){
+            totalPrice += (apple_quantity * apple_price);
+        }
 
-            if (pineapple.isChecked()){
-                totalPrice += (pineapple_quantity * pineapple_price);
-            }
+        if (pineapple.isChecked()){
+            totalPrice += (pineapple_quantity * pineapple_price);
+        }
 
-            if (coconut.isChecked()){
-                totalPrice += (coconut_quantity * coconut_price);
-            }
+        if (coconut.isChecked()){
+            totalPrice += (coconut_quantity * coconut_price);
+        }
 
-            if (watermelon.isChecked()){
-                totalPrice += (watermelon_quantity * watermelon_price);
-            }
+        if (watermelon.isChecked()){
+            totalPrice += (watermelon_quantity * watermelon_price);
+        }
 
-            if (guava.isChecked()){
-                totalPrice += (guava_quantity * guava_price);
-            }
+        if (guava.isChecked()){
+            totalPrice += (guava_quantity * guava_price);
+        }
 
-            if (banana.isChecked()){
-                totalPrice += (banana_quantity * banana_price);
-            }
+        if (banana.isChecked()){
+            totalPrice += (banana_quantity * banana_price);
+        }
 
-            if (grape.isChecked()){
-                totalPrice += (grape_quantity * grape_price);
-            }
+        if (grape.isChecked()){
+            totalPrice += (grape_quantity * grape_price);
+        }
 
-            if (dates.isChecked()){
-                totalPrice += (dates_quantity * dates_price);
-            }
+        if (dates.isChecked()){
+            totalPrice += (dates_quantity * dates_price);
+        }
 
-            if (pawpaw.isChecked()){
-                totalPrice += (pawpaw_quantity * pawpaw_price);
-            }
+        if (pawpaw.isChecked()){
+            totalPrice += (pawpaw_quantity * pawpaw_price);
+        }
 
-            if (carrot.isChecked()){
-                totalPrice += (carrot_quantity * carrot_price);
-            }
+        if (carrot.isChecked()){
+            totalPrice += (carrot_quantity * carrot_price);
+        }
 
-            if (cucumber.isChecked()){
-                totalPrice += (cucumber_quantity * cucumber_price);
-            }
+        if (cucumber.isChecked()){
+            totalPrice += (cucumber_quantity * cucumber_price);
+        }
 
-            if (strawberry.isChecked()){
-                totalPrice += (strawberry_quantity * strawberry_price);
-            }
+        if (strawberry.isChecked()){
+            totalPrice += (strawberry_quantity * strawberry_price);
+        }
 
-            if (tangerine.isChecked()){
-                totalPrice += (tangerine_quantity * tangerine_price);
-            }
+        if (tangerine.isChecked()){
+            totalPrice += (tangerine_quantity * tangerine_price);
+        }
 
         Toast.makeText(this, "The total price is " + totalPrice, Toast.LENGTH_SHORT).show();
 
