@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -32,10 +33,14 @@ public class MainActivity extends AppCompatActivity {
     public CheckBox orange, egg, apple, pineapple, coconut, watermelon, guava, banana, grape, dates,
     pawpaw, carrot, cucumber, strawberry, tangerine;
 
+    public Button orderButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        orderButton = (Button) findViewById(R.id.order_button);
 
         orangePrice = (TextView) findViewById(R.id.orange_price);
         eggPrice = (TextView) findViewById(R.id.egg_price);
@@ -101,93 +106,92 @@ public class MainActivity extends AppCompatActivity {
         strawberry_price = Integer.parseInt(strawberryPrice.getText().toString());
         tangerine_price = Integer.parseInt(tangerinePrice.getText().toString());
 
-        orange_quantity = Integer.parseInt(orangeQuantity.getText().toString());
-        egg_quantity = Integer.parseInt(eggQuantity.getText().toString());
-        apple_quantity = Integer.parseInt(appleQuantity.getText().toString());
-        pineapple_quantity = Integer.parseInt(pineappleQuantity.getText().toString());
-        coconut_quantity = Integer.parseInt(coconutQuantity.getText().toString());
-        watermelon_quantity = Integer.parseInt(watermelonQuantity.getText().toString());
-        guava_quantity = Integer.parseInt(guavaQuantity.getText().toString());
-        banana_quantity = Integer.parseInt(bananaQuantity.getText().toString());
-        grape_quantity = Integer.parseInt(grapeQuantity.getText().toString());
-        dates_quantity = Integer.parseInt(datesQuantity.getText().toString());
-        pawpaw_quantity = Integer.parseInt(pawpawQuantity.getText().toString());
-        carrot_quantity = Integer.parseInt(carrotQuantity.getText().toString());
-        cucumber_quantity = Integer.parseInt(cucumberQuantity.getText().toString());
-        strawberry_quantity = Integer.parseInt(strawberryQuantity.getText().toString());
-        tangerine_quantity = Integer.parseInt(tangerineQuantity.getText().toString());
 
-        orderNow();
+
+        orderButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                orange_quantity = Integer.parseInt(orangeQuantity.getText().toString());
+                egg_quantity = Integer.parseInt(eggQuantity.getText().toString());
+                apple_quantity = Integer.parseInt(appleQuantity.getText().toString());
+                pineapple_quantity = Integer.parseInt(pineappleQuantity.getText().toString());
+                coconut_quantity = Integer.parseInt(coconutQuantity.getText().toString());
+                watermelon_quantity = Integer.parseInt(watermelonQuantity.getText().toString());
+                guava_quantity = Integer.parseInt(guavaQuantity.getText().toString());
+                banana_quantity = Integer.parseInt(bananaQuantity.getText().toString());
+                grape_quantity = Integer.parseInt(grapeQuantity.getText().toString());
+                dates_quantity = Integer.parseInt(datesQuantity.getText().toString());
+                pawpaw_quantity = Integer.parseInt(pawpawQuantity.getText().toString());
+                carrot_quantity = Integer.parseInt(carrotQuantity.getText().toString());
+                cucumber_quantity = Integer.parseInt(cucumberQuantity.getText().toString());
+                strawberry_quantity = Integer.parseInt(strawberryQuantity.getText().toString());
+                tangerine_quantity = Integer.parseInt(tangerineQuantity.getText().toString());
+
+
+                if (orange.isChecked()){
+                    totalPrice += (orange_quantity * orange_price);
+                }
+
+                if (egg.isChecked()){
+                    totalPrice += (egg_quantity * egg_price);
+                }
+
+                if (apple.isChecked()){
+                    totalPrice += (apple_quantity * apple_price);
+                }
+
+                if (pineapple.isChecked()){
+                    totalPrice += (pineapple_quantity * pineapple_price);
+                }
+
+                if (coconut.isChecked()){
+                    totalPrice += (coconut_quantity * coconut_price);
+                }
+
+                if (watermelon.isChecked()){
+                    totalPrice += (watermelon_quantity * watermelon_price);
+                }
+
+                if (guava.isChecked()){
+                    totalPrice += (guava_quantity * guava_price);
+                }
+
+                if (banana.isChecked()){
+                    totalPrice += (banana_quantity * banana_price);
+                }
+
+                if (grape.isChecked()){
+                    totalPrice += (grape_quantity * grape_price);
+                }
+
+                if (dates.isChecked()){
+                    totalPrice += (dates_quantity * dates_price);
+                }
+
+                if (pawpaw.isChecked()){
+                    totalPrice += (pawpaw_quantity * pawpaw_price);
+                }
+
+                if (carrot.isChecked()){
+                    totalPrice += (carrot_quantity * carrot_price);
+                }
+
+                if (cucumber.isChecked()){
+                    totalPrice += (cucumber_quantity * cucumber_price);
+                }
+
+                if (strawberry.isChecked()){
+                    totalPrice += (strawberry_quantity * strawberry_price);
+                }
+
+                if (tangerine.isChecked()){
+                    totalPrice += (tangerine_quantity * tangerine_price);
+                }
+
+                Toast.makeText(MainActivity.this, "The total price is " + totalPrice, Toast.LENGTH_SHORT).show();
+            }
+        });
+
     }
-
-    public void orderNow(){
-
-//        Intent intent = new Intent(this, DisplaySummaryActivity.class);
-//        startActivity(intent);
-
-        if (orange.isChecked()){
-            totalPrice += (orange_quantity * orange_price);
-        }
-
-        if (egg.isChecked()){
-            totalPrice += (egg_quantity * egg_price);
-        }
-
-        if (apple.isChecked()){
-            totalPrice += (apple_quantity * apple_price);
-        }
-
-        if (pineapple.isChecked()){
-            totalPrice += (pineapple_quantity * pineapple_price);
-        }
-
-        if (coconut.isChecked()){
-            totalPrice += (coconut_quantity * coconut_price);
-        }
-
-        if (watermelon.isChecked()){
-            totalPrice += (watermelon_quantity * watermelon_price);
-        }
-
-        if (guava.isChecked()){
-            totalPrice += (guava_quantity * guava_price);
-        }
-
-        if (banana.isChecked()){
-            totalPrice += (banana_quantity * banana_price);
-        }
-
-        if (grape.isChecked()){
-            totalPrice += (grape_quantity * grape_price);
-        }
-
-        if (dates.isChecked()){
-            totalPrice += (dates_quantity * dates_price);
-        }
-
-        if (pawpaw.isChecked()){
-            totalPrice += (pawpaw_quantity * pawpaw_price);
-        }
-
-        if (carrot.isChecked()){
-            totalPrice += (carrot_quantity * carrot_price);
-        }
-
-        if (cucumber.isChecked()){
-            totalPrice += (cucumber_quantity * cucumber_price);
-        }
-
-        if (strawberry.isChecked()){
-            totalPrice += (strawberry_quantity * strawberry_price);
-        }
-
-        if (tangerine.isChecked()){
-            totalPrice += (tangerine_quantity * tangerine_price);
-        }
-
-        Toast.makeText(this, "The total price is " + totalPrice, Toast.LENGTH_SHORT).show();
-
-    }
-
 
 }
