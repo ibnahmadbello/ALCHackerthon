@@ -45,7 +45,22 @@ public class MainActivity extends AppCompatActivity {
         cucumberPrice = (TextView) findViewById(R.id.cucumber_price);
         strawberryPrice = (TextView) findViewById(R.id.strawberry_price);
         tangerinePrice = (TextView) findViewById(R.id.tangerine_price);
+
         orangeQuantity = (EditText) findViewById(R.id.orange_quantity);
+        eggQuantity = (EditText) findViewById(R.id.egg_quantity);
+        appleQuantity = (EditText) findViewById(R.id.apple_quantity);
+        pineappleQuantity = (EditText) findViewById(R.id.pineapple_quantity);
+        coconutQuantity = (EditText) findViewById(R.id.coconut_quantity);
+        watermelonQuantity = (EditText) findViewById(R.id.water_melon_quantity);
+        guavaQuantity = (EditText) findViewById(R.id.guava_quantity);
+        bananaQuantity = (EditText) findViewById(R.id.banana_quantity);
+        grapeQuantity = (EditText) findViewById(R.id.grape_quantity);
+        datesQuantity = (EditText) findViewById(R.id.dates_quantity);
+        pawpawQuantity = (EditText) findViewById(R.id.paw_paw_quantity);
+        carrotQuantity = (EditText) findViewById(R.id.carrot_quantity);
+        cucumberQuantity = (EditText) findViewById(R.id.cucumber_quantity);
+        strawberryQuantity = (EditText) findViewById(R.id.strawberry_quantity);
+        tangerineQuantity = (EditText) findViewById(R.id.tangerine_quantity);
     }
 
     public void orderNow(View view){
