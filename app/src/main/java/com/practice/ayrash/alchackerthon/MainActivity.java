@@ -3,6 +3,7 @@ package com.practice.ayrash.alchackerthon;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -20,27 +21,25 @@ public class MainActivity extends AppCompatActivity {
 
     int orange_quantity, egg_quantity, apple_quantity, pineapple_quantity, coconut_quantity,
     watermelon_quantity, guava_quantity, banana_quantity, grape_quantity, dates_quantity,
-    pawpaw_quantity, carrot_quantity, cucumber_quantity, strawberry_quantity, tangerine_quantity;
+    pawpaw_quantity, carrot_quantity, cucumber_quantity, strawberry_quantity, tangerine_quantity = 1;
 
-    public TextView orangePrice, eggPrice, applePrice, pineapplePrice, coconutPrice, watermelonPrice,
+    TextView orangePrice, eggPrice, applePrice, pineapplePrice, coconutPrice, watermelonPrice,
     guavaPrice, bananaPrice, grapePrice, datesPrice, pawpawPrice, carrotPrice, cucumberPrice,
     strawberryPrice, tangerinePrice;
 
-    public EditText orangeQuantity, eggQuantity, appleQuantity, pineappleQuantity, coconutQuantity,
+    EditText orangeQuantity, eggQuantity, appleQuantity, pineappleQuantity, coconutQuantity,
     watermelonQuantity, guavaQuantity, bananaQuantity, grapeQuantity, datesQuantity, pawpawQuantity,
     carrotQuantity, cucumberQuantity, strawberryQuantity, tangerineQuantity;
 
-    public CheckBox orange, egg, apple, pineapple, coconut, watermelon, guava, banana, grape, dates,
+    CheckBox orange, egg, apple, pineapple, coconut, watermelon, guava, banana, grape, dates,
     pawpaw, carrot, cucumber, strawberry, tangerine;
 
-    public Button orderButton;
+    Button orderButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        orderButton = (Button) findViewById(R.id.order_button);
 
         orangePrice = (TextView) findViewById(R.id.orange_price);
         eggPrice = (TextView) findViewById(R.id.egg_price);
@@ -106,7 +105,7 @@ public class MainActivity extends AppCompatActivity {
         strawberry_price = Integer.parseInt(strawberryPrice.getText().toString());
         tangerine_price = Integer.parseInt(tangerinePrice.getText().toString());
 
-
+        orderButton = (Button) findViewById(R.id.order_button);
 
         orderButton.setOnClickListener(new View.OnClickListener() {
             @Override
