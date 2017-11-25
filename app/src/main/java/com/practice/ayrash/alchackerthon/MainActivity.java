@@ -22,13 +22,16 @@ public class MainActivity extends AppCompatActivity {
     public TextView orangePrice, eggPrice, applePrice, pineapplePrice, coconutPrice, watermelonPrice,
     guavaPrice, bananaPrice, grapePrice, datesPrice, pawpawPrice, carrotPrice, cucumberPrice,
     strawberryPrice, tangerinePrice;
-    public EditText orangeQuantity;
+    public EditText orangeQuantity, eggQuantity, appleQuantity, pineappleQuantity, coconutQuantity,
+    watermelonQuantity, guavaQuantity, bananaQuantity, grapeQuantity, datesQuantity, pawpawQuantity,
+    carrotQuantity, cucumberQuantity, strawberryQuantity, tangerineQuantity;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         orangePrice = (TextView) findViewById(R.id.orange_price);
+        eggPrice = (TextView) findViewById(R.id.egg_price);
         orangeQuantity = (EditText) findViewById(R.id.orange_quantity);
     }
 
