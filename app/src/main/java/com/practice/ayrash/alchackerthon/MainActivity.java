@@ -32,6 +32,19 @@ public class MainActivity extends AppCompatActivity {
 
         orangePrice = (TextView) findViewById(R.id.orange_price);
         eggPrice = (TextView) findViewById(R.id.egg_price);
+        applePrice = (TextView) findViewById(R.id.apple_price);
+        pineapplePrice = (TextView) findViewById(R.id.pineapple_price);
+        coconutPrice = (TextView) findViewById(R.id.coconut_price);
+        watermelonPrice = (TextView) findViewById(R.id.water_melon_price);
+        guavaPrice = (TextView) findViewById(R.id.guava_price);
+        bananaPrice = (TextView) findViewById(R.id.banana_price);
+        grapePrice = (TextView) findViewById(R.id.grape_price);
+        datesPrice = (TextView) findViewById(R.id.dates_price);
+        pawpawPrice = (TextView) findViewById(R.id.paw_paw_price);
+        carrotPrice = (TextView) findViewById(R.id.carrot_price);
+        cucumberPrice = (TextView) findViewById(R.id.cucumber_price);
+        strawberryPrice = (TextView) findViewById(R.id.strawberry_price);
+        tangerinePrice = (TextView) findViewById(R.id.tangerine_price);
         orangeQuantity = (EditText) findViewById(R.id.orange_quantity);
     }
 
