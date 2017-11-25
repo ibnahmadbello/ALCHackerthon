@@ -61,6 +61,22 @@ public class MainActivity extends AppCompatActivity {
         cucumberQuantity = (EditText) findViewById(R.id.cucumber_quantity);
         strawberryQuantity = (EditText) findViewById(R.id.strawberry_quantity);
         tangerineQuantity = (EditText) findViewById(R.id.tangerine_quantity);
+
+        orange_price = Integer.parseInt(orangePrice.getText().toString());
+        egg_price = Integer.parseInt(eggPrice.getText().toString());
+        apple_price = Integer.parseInt(applePrice.getText().toString());
+        pineapple_price = Integer.parseInt(pineapplePrice.getText().toString());
+        coconut_price = Integer.parseInt(coconutPrice.getText().toString());
+        watermelon_price = Integer.parseInt(watermelonPrice.getText().toString());
+        guava_price = Integer.parseInt(guavaPrice.getText().toString());
+        banana_price = Integer.parseInt(bananaPrice.getText().toString());
+        grape_price = Integer.parseInt(grapePrice.getText().toString());
+        dates_price = Integer.parseInt(datesPrice.getText().toString());
+        pawpaw_price = Integer.parseInt(pawpawPrice.getText().toString());
+        carrot_price = Integer.parseInt(carrotPrice.getText().toString());
+        cucumber_price = Integer.parseInt(cucumberPrice.getText().toString());
+        strawberry_price = Integer.parseInt(strawberryPrice.getText().toString());
+        tangerine_price = Integer.parseInt(tangerinePrice.getText().toString());
     }
 
     public void orderNow(View view){
@@ -68,36 +84,8 @@ public class MainActivity extends AppCompatActivity {
 //        Intent intent = new Intent(this, DisplaySummaryActivity.class);
 //        startActivity(intent);
 
-//        TextView orangePrice = (TextView) findViewById(R.id.orange_price);
-        orange_price = Integer.parseInt(orangePrice.getText().toString());
-        TextView eggPrice = (TextView) findViewById(R.id.egg_price);
-        egg_price = Integer.parseInt(eggPrice.getText().toString());
-        TextView applePrice = (TextView) findViewById(R.id.apple_price);
-        apple_price = Integer.parseInt(applePrice.getText().toString());
-        TextView pineapplePrice = (TextView) findViewById(R.id.pineapple_price);
-        pineapple_price = Integer.parseInt(pineapplePrice.getText().toString());
-        TextView coconutPrice = (TextView) findViewById(R.id.coconut_price);
-        coconut_price = Integer.parseInt(coconutPrice.getText().toString());
-        TextView waterMelonPrice = (TextView) findViewById(R.id.water_melon_price);
-        watermelon_price = Integer.parseInt(waterMelonPrice.getText().toString());
-        TextView guavaPrice = (TextView) findViewById(R.id.guava_price);
-        guava_price = Integer.parseInt(guavaPrice.getText().toString());
-        TextView bananaPrice = (TextView) findViewById(R.id.banana_price);
-        banana_price = Integer.parseInt(bananaPrice.getText().toString());
-        TextView grapePrice = (TextView) findViewById(R.id.grape_price);
-        grape_price = Integer.parseInt(grapePrice.getText().toString());
-        TextView datesPrice = (TextView) findViewById(R.id.dates_price);
-        dates_price = Integer.parseInt(datesPrice.getText().toString());
-        TextView pawpawPrice = (TextView) findViewById(R.id.paw_paw_price);
-        pawpaw_price = Integer.parseInt(pawpawPrice.getText().toString());
-        TextView carrotPrice = (TextView) findViewById(R.id.carrot_price);
-        carrot_price = Integer.parseInt(carrotPrice.getText().toString());
-        TextView cucumberPrice = (TextView) findViewById(R.id.cucumber_price);
-        cucumber_price = Integer.parseInt(cucumberPrice.getText().toString());
-        TextView strawberryPrice = (TextView) findViewById(R.id.strawberry_price);
-        strawberry_price = Integer.parseInt(strawberryPrice.getText().toString());
-        TextView tangerinePrice = (TextView) findViewById(R.id.tangerine_price);
-        tangerine_price = Integer.parseInt(tangerinePrice.getText().toString());
+
+
 
 //        EditText orangeQuantity = (EditText) findViewById(R.id.orange_quantity);
         orange_quantity = Integer.parseInt(orangeQuantity.getText().toString());
