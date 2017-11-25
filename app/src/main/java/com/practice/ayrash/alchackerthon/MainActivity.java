@@ -34,19 +34,61 @@ public class MainActivity extends AppCompatActivity {
                 totalPrice += (orange_quantity * orange_price);
             }
         CheckBox egg = (CheckBox) findViewById(R.id.egg);
+            if (egg.isChecked()){
+                totalPrice += (egg_quantity * egg_price);
+            }
         CheckBox apple = (CheckBox) findViewById(R.id.apple);
+            if (apple.isChecked()){
+                totalPrice += (apple_quantity * apple_price);
+            }
         CheckBox pineapple = (CheckBox) findViewById(R.id.pineapple);
+            if (pineapple.isChecked()){
+                totalPrice += (pineapple_quantity * pineapple_price);
+            }
         CheckBox coconut = (CheckBox) findViewById(R.id.coconut);
+            if (coconut.isChecked()){
+                totalPrice += (coconut_quantity * coconut_price);
+            }
         CheckBox waterMelon = (CheckBox) findViewById(R.id.water_melon);
+            if (waterMelon.isChecked()){
+                totalPrice += (watermelon_quantity * watermelon_price);
+            }
         CheckBox guava = (CheckBox) findViewById(R.id.guava);
+            if (guava.isChecked()){
+                totalPrice += (guava_quantity * guava_price);
+            }
         CheckBox banana = (CheckBox) findViewById(R.id.banana);
+            if (banana.isChecked()){
+                totalPrice += (banana_quantity * banana_price);
+            }
         CheckBox grape = (CheckBox) findViewById(R.id.grape);
+            if (grape.isChecked()){
+                totalPrice += (grape_quantity * grape_price);
+            }
         CheckBox dates = (CheckBox) findViewById(R.id.dates);
+            if (dates.isChecked()){
+                totalPrice += (dates_quantity * dates_price);
+            }
         CheckBox pawPaw = (CheckBox) findViewById(R.id.paw_paw);
+            if (pawPaw.isChecked()){
+                totalPrice += (pawpaw_quantity * pawpaw_price);
+            }
         CheckBox carrot = (CheckBox) findViewById(R.id.carrot);
+            if (carrot.isChecked()){
+                totalPrice += (carrot_quantity * carrot_price);
+            }
         CheckBox cucumber = (CheckBox) findViewById(R.id.cucumber);
+            if (cucumber.isChecked()){
+                totalPrice += (cucumber_quantity * cucumber_price);
+            }
         CheckBox strawberry = (CheckBox) findViewById(R.id.strawberry);
+            if (strawberry.isChecked()){
+                totalPrice += (strawberry_quantity * strawberry_price);
+            }
         CheckBox tangerine = (CheckBox) findViewById(R.id.tangerine);
+            if (tangerine.isChecked()){
+                totalPrice += (tangerine_quantity * tangerine_price);
+            }
 
         TextView orangePrice = (TextView) findViewById(R.id.orange_price);
         orange_price = Integer.parseInt(orangePrice.getText().toString());
