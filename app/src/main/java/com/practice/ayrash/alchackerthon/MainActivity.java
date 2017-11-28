@@ -13,7 +13,9 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
+    static final String OrderDetails = "Order_Amount";
     int totalPrice = 0;
+
 
     int orange_price, egg_price, apple_price, pineapple_price, coconut_price, watermelon_price,
     guava_price, banana_price, grape_price, dates_price, pawpaw_price, carrot_price, cucumber_price,
@@ -202,6 +204,9 @@ public class MainActivity extends AppCompatActivity {
                     totalPrice += (tangerine_quantity * tangerine_price);
                 }
 
+                Intent displaySummaryIntent = new Intent(MainActivity.this, DisplaySummaryActivity.class);
+                displaySummaryIntent.putExtra(OrderDetails, totalPrice);
+                startActivity(displaySummaryIntent);
                 Toast.makeText(MainActivity.this, "The total price is " + totalPrice, Toast.LENGTH_SHORT).show();
             }
         });
