@@ -10,6 +10,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import static android.R.id.message;
+import static com.practice.ayrash.alchackerthon.MainActivity.OrderDetails;
 import static com.practice.ayrash.alchackerthon.R.id.orange;
 
 public class DisplaySummaryActivity extends AppCompatActivity {
@@ -22,9 +23,10 @@ public class DisplaySummaryActivity extends AppCompatActivity {
         setContentView(R.layout.activity_display_summary);
 
         Intent intent = getIntent();
+        totalPrice = intent.getIntExtra(OrderDetails, 0);
     }
 
-    public void orderNow(View view){
+    public void generateSummary(View view){
 
         //To get the text from editfield
         EditText nameField = (EditText) findViewById(R.id.customer_name);
@@ -33,8 +35,6 @@ public class DisplaySummaryActivity extends AppCompatActivity {
 
         String message = createOrderSummary(name);
         displaySummary(message);
-
-
 
         Toast.makeText(this, "Your total is " + totalPrice, Toast.LENGTH_SHORT).show();
 
