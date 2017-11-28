@@ -110,10 +110,14 @@ public class MainActivity extends AppCompatActivity {
         orderButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                orange_quantity = Integer.parseInt(orangeQuantity.getText().toString());
-                egg_quantity = Integer.parseInt(eggQuantity.getText().toString());
-                apple_quantity = Integer.parseInt(appleQuantity.getText().toString());
-                pineapple_quantity = Integer.parseInt(pineappleQuantity.getText().toString());
+                String orangeQty = orangeQuantity.getText().toString();
+                orange_quantity = Integer.parseInt(orangeQty.equals("") ? "0" : orangeQty);
+                String eggQty = eggQuantity.getText().toString();
+                egg_quantity = Integer.parseInt(eggQty.equals("") ? "0" : eggQty);
+                String appleQty = appleQuantity.getText().toString();
+                apple_quantity = Integer.parseInt(appleQty.equals("") ? "0" : appleQty);
+                String pineappleQty = pineappleQuantity.getText().toString();
+                pineapple_quantity = Integer.parseInt(orangeQty.equals() ? "0" : pineappleQty);
                 coconut_quantity = Integer.parseInt(coconutQuantity.getText().toString());
                 watermelon_quantity = Integer.parseInt(watermelonQuantity.getText().toString());
                 guava_quantity = Integer.parseInt(guavaQuantity.getText().toString());
