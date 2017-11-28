@@ -117,18 +117,29 @@ public class MainActivity extends AppCompatActivity {
                 String appleQty = appleQuantity.getText().toString();
                 apple_quantity = Integer.parseInt(appleQty.equals("") ? "0" : appleQty);
                 String pineappleQty = pineappleQuantity.getText().toString();
-                pineapple_quantity = Integer.parseInt(orangeQty.equals() ? "0" : pineappleQty);
-                coconut_quantity = Integer.parseInt(coconutQuantity.getText().toString());
-                watermelon_quantity = Integer.parseInt(watermelonQuantity.getText().toString());
-                guava_quantity = Integer.parseInt(guavaQuantity.getText().toString());
-                banana_quantity = Integer.parseInt(bananaQuantity.getText().toString());
-                grape_quantity = Integer.parseInt(grapeQuantity.getText().toString());
-                dates_quantity = Integer.parseInt(datesQuantity.getText().toString());
-                pawpaw_quantity = Integer.parseInt(pawpawQuantity.getText().toString());
-                carrot_quantity = Integer.parseInt(carrotQuantity.getText().toString());
-                cucumber_quantity = Integer.parseInt(cucumberQuantity.getText().toString());
-                strawberry_quantity = Integer.parseInt(strawberryQuantity.getText().toString());
-                tangerine_quantity = Integer.parseInt(tangerineQuantity.getText().toString());
+                pineapple_quantity = Integer.parseInt(orangeQty.equals("") ? "0" : pineappleQty);
+                String coconutQty = coconutQuantity.getText().toString();
+                coconut_quantity = Integer.parseInt(coconutQty.equals("") ? "0" : coconutQty);
+                String watermelonQty = watermelonQuantity.getText().toString();
+                watermelon_quantity = Integer.parseInt(watermelonQty.equals("") ? "0" : watermelonQty);
+                String guavaQty = guavaQuantity.getText().toString();
+                guava_quantity = Integer.parseInt(guavaQty.equals("") ? "0" : guavaQty);
+                String bananaQty = bananaQuantity.getText().toString();
+                banana_quantity = Integer.parseInt(bananaQty.equals("") ? "0" : bananaQty);
+                String grapeQty = grapeQuantity.getText().toString();
+                grape_quantity = Integer.parseInt(grapeQty.equals("") ? "0" : grapeQty);
+                String datesQty = datesQuantity.getText().toString();
+                dates_quantity = Integer.parseInt(datesQty.equals("") ? "0" : datesQty);
+                String pawpawQty = pawpawQuantity.getText().toString();
+                pawpaw_quantity = Integer.parseInt(pawpawQty.equals("") ? "0" : pawpawQty);
+                String carrotQty = carrotQuantity.getText().toString();
+                carrot_quantity = Integer.parseInt(carrotQty.equals("") ? "0" : carrotQty);
+                String cucumberQty = cucumberQuantity.getText().toString();
+                cucumber_quantity = Integer.parseInt(cucumberQty.equals("") ? "0" : cucumberQty);
+                String strawberryQty = strawberryQuantity.getText().toString();
+                strawberry_quantity = Integer.parseInt(strawberryQty.equals("") ? "0" : strawberryQty);
+                String tangerineQty = tangerineQuantity.getText().toString();
+                tangerine_quantity = Integer.parseInt(tangerineQty.equals("") ? "0" : tangerineQty);
 
 
                 if (orange.isChecked()){
