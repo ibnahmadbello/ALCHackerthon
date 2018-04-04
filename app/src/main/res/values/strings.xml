@@ -3,7 +3,7 @@
     <string name="heading">Welcome to Andela Fruits Shop</string>
     <string name="your_name">Please type your name here:</string>
     <string name="select_items">Please Select your items from the list below: </string>
-    <string name="summary_page">Summary Page</string>
+    <string name="summary_page">Summary Page:</string>
     <string name="summary_report">Generate Summary Report</string>
     <string name="price">price(#)</string>
     <string name="quantity">QUANTITY</string>
@@ -39,5 +39,5 @@
     <string name="tangerine_price">50</string>
     <string name="order_now">ORDER NOW</string>
     <string name="items">Items</string>
-    <string name="generate_receipt">Generate Receipt</string>
+    <string name="generate_receipt">Read Summary Report</string>
 </resources>
